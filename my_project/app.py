@@ -10,9 +10,12 @@ DIM = 384  # all-MiniLM-L6-v2 output dimension
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
+import re
+
 base = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(base, "data.txt"), "r") as f:
-    lines = [line.strip() for line in f if line.strip()]
+    raw = f.read()
+lines = [s.strip() for s in re.split(r'(?<=[.!?])\s+', raw) if s.strip()]
 
 
 def create_index():
