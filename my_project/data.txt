@@ -1,0 +1,9 @@
+Machine learning is a subset of artificial intelligence that allows systems to learn from data.
+
+Artificial intelligence is the simulation of human intelligence in machines.
+
+Data science involves extracting insights from structured and unstructured data.
+
+Deep learning is a part of machine learning using neural networks.
+
+Python is widely used for AI and machine learning applications.
